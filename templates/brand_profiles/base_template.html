@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gaurang Torvekar | Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://bootstraptaste.com" />
+<!-- css -->
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'brand_profiles/css/bootstrap.min.css' %}" />	
+<link rel="stylesheet" type="text/css" href="{% static 'brand_profiles/css/fancybox/jquery.fancybox.css' %}" />	
+<link rel="stylesheet" type="text/css" href="{% static 'brand_profiles/css/jcarousel.css' %}" />	
+<link rel="stylesheet" type="text/css" href="{% static 'brand_profiles/css/flexslider.css' %}" />	
+<link rel="stylesheet" type="text/css" href="{% static 'brand_profiles/css/style.css' %}" />	
+
+<!-- Theme skin -->
+<link rel="stylesheet" type="text/css" href="{% static 'brand_profiles/skins/default.css' %}" />	
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper">
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><span>G</span>aurang Torvekar</a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li><a href="/work">Work Experience</a></li>
+                        <li><a href="/api">API</a></li>
+                        <li><a href="/education">Education</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+	<section id="content">
+	<div class="container">
+		{% block main_content %}{% endblock %}
+		
+		
+	</div>
+	</section>
+	<footer style="position:fixed; bottom:0; right:0; left:0">
+		<p class="aligncenter" style="margin-top:-35px">
+			Disclaimer:- The API has been developed in Python-Django. Use of open source libraries has been made. Please contact me to know more.
+		</p>
+	</footer>
+</div>
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'js/jquery.js' %}' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox.pack.js' %}"></script>
+<script src="{% static 'js/jquery.fancybox-media.js' %}"></script>
+<script src="{% static 'js/google-code-prettify/prettify.js' %}"></script>
+<script src="{% static 'js/portfolio/jquery.quicksand.js' %}"></script>
+<script src="{% static 'js/portfolio/setting.js' %}"></script>
+<script src="{% static 'js/jquery.flexslider.js' %}"></script>
+<script src="{% static 'js/animate.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+</body>
+</html>

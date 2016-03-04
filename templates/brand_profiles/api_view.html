@@ -1,0 +1,21 @@
+{% extends 'brand_profiles/base_template.html' %}
+{% load staticfiles %}
+{% block main_content %}
+		<h3>Text Analysis API</h3>
+        <p>Suppose your document is a sentence - "This is an awesome movie!", send your document to 'www.gaurangtorvekar.com/api/analyse/'</p>
+        <p>Your input data should be in json format like so - </p>
+        <p>{"json":{"text":"This is an awesome movie!"}}</p>	
+		<br/>
+
+		<h4>The response is in the following format </h4>
+		<p>&nbsp{'sentiments':<br/>&nbsp &nbsp &nbsp &nbsp &nbsp{'positive':1, 'negative':0}, <br/>&nbsp &nbsp'frequent_words':[], <br/>&nbsp &nbsp'pos_tags':<br/>&nbsp &nbsp &nbsp &nbsp &nbsp{'adjectives':[], 'verbs':[], 'nouns':[]}<br/>&nbsp}</p>
+
+		<!-- divider -->
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="solidline">
+				</div>
+			</div>
+		</div>
+		<!-- end divider -->
+{% endblock %}
