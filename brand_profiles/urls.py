@@ -8,6 +8,6 @@ urlpatterns = patterns('',
         url(r'^education/$', views.education_view, name='education'),
         url(r'^contact/$', views.contact_view, name='contact'),
         url(r'^api/analyse/$', views.sample, name='analyse'),
-        url(r'^login/$', views.login_example, name='login'),
+     
     )
 		
